@@ -1,0 +1,77 @@
+/* Setting background color and dimensions for the HTML element */
+html {
+    background-color: burlywood;
+    width: 1030px;
+    height: 1590px; 
+    margin: auto;
+}
+
+/* Styling for a button class */
+.but {
+    width: 1014px;
+    height: 600px;
+}
+
+/* Styling for navigation list items */
+nav li {
+    text-align: center;
+    width: 190px;
+    display: inline-block;
+    border-right: 1px solid #333;
+    padding-left: 60px;
+}
+
+/* Removing right border for the last navigation list item */
+nav li:last-child {
+    border-right: none;
+}
+
+/* Styling for images within a section */
+section img {
+    float: left;
+    width: 270px;
+    height: 290px;
+    margin: 0.5rem;
+}
+
+/* Styling for categories */
+.cat {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin: 0.5rem;
+}
+
+/* Styling for a specific class 'dog' */
+.dog {
+    width: 500px;
+    height: 200px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+/* General body styling */
+body {
+    background-color: beige;
+}
+
+/* Styling for a class 'man' */
+.man {
+    border: solid;
+    margin: 15px;
+    width: 980px;
+    height: auto;
+}
+
+/* Styling for footer */
+footer {
+    text-align: right;
+}
+
+/* Styling for h1 */
+h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
