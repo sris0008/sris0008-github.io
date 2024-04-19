@@ -1,0 +1,306 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif; /*set font family*/
+    background-color: #fff; /* set background color*/
+    color: #222; /*set text color*/
+}
+/* navigation styles */
+ul{
+    display: flex; /*display the list as flex*/
+    list-style-type: none; /*remove default list style*/
+    background-color: black; /*set background color as black*/
+    color:#c78c06; /*set text color*/
+    height:auto; /*auto height*/
+}
+ul li{ 
+    margin: auto; /*center the list items horizontally*/
+}
+ul li:nth-child(2) {
+    background-color: #c78c06; /* background color for the second list item*/
+    color: #222; /*black text color*/
+    width: auto; /*auto width*/
+}
+ul li button {
+    /* button styles */
+    background-color: black; /*black background color*/
+    color: #c78c06; /*text color*/
+    border: 2px solid #c78c06; /* border with color*/
+}
+
+/* Header styles */
+.main-banner {
+    width: 100%; /* full width*/
+    height: 900px; /*height to 900px*/
+}
+.header-content{
+    position: relative; /* Positioning context for absolute positioning */
+    display: inline-block; /*display inline-block*/
+}
+.header-content{
+    position: absolute; /* position absolute*/
+    top: 40%; /* Position from top */
+    left:8%; /* Position from left */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    width: 85%; /* Adjust the width of the overlay */
+    height: 80%; /* Adjust the height of the overlay */
+    z-index: 1; /* Ensure the overlay is above the image */
+    color: white; /*text color as white*/
+}
+/*styling for h1*/
+.header-content h1 {
+    font-size: 4rem;/*font size*/
+    margin: 15px; /*set margin*/
+}
+/*styling for paragraph*/
+.header-content p {
+    font-size: 1rem;/*font sixe*/
+    margin: 20px; /*set margin*/
+}
+/*styling for button*/
+.header-content button{
+    background-color: #c78c06;/*background color of button*/
+    margin: 20px; /*margin*/
+    height:40px; /*height*/
+}
+/*styling container*/
+.about-us-container {
+    overflow: hidden; /* Clear float */
+    background-color: #ffe6ac; /* Background color */
+    padding: 20px; /* Adjust padding as needed */
+}
+/*styling the image */
+.about-us-container .image {
+    float: left; /* Float image to the left */
+    margin-left: 50px; /* Adjust margin as needed */
+    width: 500px; /* set width*/
+}
+
+ .about-us-container .about-us {
+    font-size: 1rem; /*set font size*/
+    margin-right: 50px; /* right margin set*/
+    margin-left: 60px; /* left margin set*/
+}
+/*styling h2 of about us*/
+.about-us h2{
+    font-size: 2rem;/* font size set*/
+    font-weight: bold; /* set bold weight of font*/
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us-container .image {
+        float: none; /* Remove float for responsiveness */
+        display: block;
+        margin-right: 0; /* Remove margin for responsiveness */
+    }
+}
+/* Services section */
+.section-services{
+    padding: 55px;/*padding set*/
+}
+/*styling h2 for our services*/
+.our-services-container h2{
+    font-size: 2rem;/* font size set*/
+    font-weight: bold;/* set bold weight of font*/
+}
+/*styling for our service*/
+.our-services-container{
+    display: grid;/*grid display*/
+    grid-template-columns: repeat(6,1fr);/* grid columns set*/
+    grid-template-rows: 1fr;/* grid rows set*/
+    padding-left:4rem ;/*left padding set*/
+    padding-right: 4rem;/*right padding set*/
+    gap: 20px;/*adjust gap*/
+}
+/*styling for digital*/
+.digital{
+    grid-column: 1/4;/*grid column set*/
+    background-color: #ffe6ac;/*background color set*/
+    color: #222;/*text color as black*/
+}
+/*styling for digital image*/
+.digital img{
+    width: 620px;/*width set*/
+}
+/*styling for digital h3*/
+.digital h3{
+    font-size: 1rem;/*font size*/
+    font-weight:bold;/*font weight as bold*/
+    margin: 5px;/*adjust margin*/
+}
+/*styling for digital button*/
+.digital button{
+    background-color: #222; /*background color set*/
+    color: whitesmoke; /*text color*/
+    width: 500px; /*adjust width*/
+    margin: 50px;/*adjust margin*/
+    height: 50px;/*adjust height*/
+}
+/*styling for marketing*/
+.marketing{
+    grid-column: 4/7;/*grid column set*/
+    background-color: #ffe6ac;/*background color set*/
+    color: #222;/*text color as black*/
+}
+/*styling for marketing image*/
+.marketing img{
+    width: 620px;/*width set*/
+}
+/*styling for marketing h3*/
+.marketing h3{
+    font-size: 1rem;/*font size*/
+    font-weight:bold;/*font weight as bold*/
+    margin: 5px;/*adjust margin*/
+}
+/*styling for marketing button*/
+.marketing button{
+    background-color: #222;/*background color set*/
+    color: whitesmoke; /*text color*/
+    width: 500px;/*adjust width*/
+    margin: 50px;/*adjust margin*/
+    height: 50px;/*adjust height*/
+}
+/*styling for marketing*/
+.video{
+    grid-column: 1/3;/*grid column set*/
+    background-color: #ffe6ac;/*background color set*/
+    color: #222;/*text color as black*/
+}
+/*styling for video image*/
+.video img{
+    width: 410px;/*width set*/
+}
+/*styling for video h3*/
+.video h3{
+    font-size: 1rem;/*font size*/
+    font-weight:bold;/*font weight as bold*/
+    margin: 5px;/*adjust margin*/
+}
+/*styling for video button*/
+.video button{
+    background-color: #222;/*background color set*/
+    color: whitesmoke; /*text color*/
+    width: 300px;/*adjust width*/
+    margin: 50px;/*adjust margin*/
+    height: 50px;/*adjust height*/
+}
+/*styling for web*/
+.web{
+    grid-column: 3/5;/*grid column set*/
+    background-color: #ffe6ac;/*background color set*/
+    color: #222;/*text color as black*/
+}
+/*styling for web image*/
+.web img{
+    width: 410px;/*width set*/
+}
+/*styling for web h3*/
+.web h3{
+    font-size: 1rem;/*font size*/
+    font-weight:bold;/*font weight as bold*/
+    margin: 5px;/*adjust margin*/
+}
+/*styling for web button*/
+.web button{
+    background-color: #222;/*background color set*/
+    color: whitesmoke; /*text color*/
+    width: 300px;/*adjust width*/
+    margin: 50px;/*adjust margin*/
+    height: 50px;/*adjust height*/
+}
+/*styling for print*/
+.print{
+    grid-column: 5/7;/*grid column set*/
+    background-color: #ffe6ac;/*background color set*/
+    color: #222;/*text color as black*/
+}
+/*styling for print image*/
+.print img{
+    width: 410px;/*width set*/
+}
+/*styling for print h3*/
+.print h3{
+    font-size: 1rem;/*font size*/
+    font-weight:bold;/*font weight as bold*/
+    margin: 5px;/*adjust margin*/
+}
+/*styling for print button*/
+.print button{
+    background-color: #222;/*background color set*/
+    color: whitesmoke; /*text color*/
+    width: 300px;/*adjust width*/
+    margin: 50px;/*adjust margin*/
+    height: 50px;/*adjust height*/
+}
+/* our vision section */
+.section-vision {
+    position: relative; /* Set  positioning context */
+}
+
+.our-vision-container {
+    position: relative; /* Set the container as a positioning relative */
+}
+
+.our-vision {
+    position: absolute; /* Position absolute */
+    top: 50%; /* Align the text vertically at 50% from the top */
+    left: 35%; /* Align the text horizontally at 50% from the left */
+    transform: translate(-50%, -50%); /* Center the text precisely */
+    text-align: left; /* align the text */
+    color: #fff; /* Text color */
+    background-color: rgba(0, 0, 0, 0); /*background color */
+    max-width: 80%; /* max width of the text container */
+}
+.vision-image{
+    width:100%;/*set width*/
+    height:300px;/*set height*/
+}
+
+.our-vision h2 {
+    margin-left: 50px;/*set margin*/
+}
+
+.our-vision p {
+    margin-bottom: 10px; /* Add margin below the paragraph */
+}
+
+.our-vision button{
+    background-color: #222;/*background color*/
+    color: whitesmoke;/*text color*/
+    width: 150px;/*set width*/
+    height: 50px;/*set height*/
+}
+/* hours of operation */
+.hours-operation {
+    flex-basis: calc(33.33% - 20px); /* Adjust width and margins */
+    margin-bottom: 20px; /* Adjust margin between items */
+}
+
+.hours-operation table {
+    width: 100%; /*width*/
+    border-collapse: collapse;/*collapse borders*/
+}
+
+.hours-operation th,
+.hours-operation td {
+    border: 1px solid #0b0b0b;/*set border*/
+    padding: 8px;/*set padding*/
+    text-align: left;/*set text align*/
+}
+
+.hours-operation th {
+    background-color: #c8a90e;/*set background color*/
+}
+
+
+/* Footer styles */
+.footer-content {
+    background-color: #222;/*set background color*/
+    color: #c78c06;/*set text color*/
+    text-align: start;/*set text align*/
+    padding-left: 60px;/*set left padding*/
+    height: 70px;/*set height*/
+}
